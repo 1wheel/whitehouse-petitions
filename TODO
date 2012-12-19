@@ -1,0 +1,78 @@
+TODO
+autodownload
+	create list of petition names/URLs
+	for each
+		load file from last time (if none create new - empty w/dl date 2000)
+		check last download date 
+		download updates until next date is found
+		look up county codes for all newly added sigs
+		save file
+
+		for each county 
+			find pop and num sigs 
+			save in json file
+			(red/blue - men/women?)
+
+parse us.txt
+	load US.txt into array
+	make try with state name - city name (dic?) cityname
+
+find county code
+	-save this dic-
+	create look up function 
+	FISTcode(city name) :
+		return {'fists': xxxx, 'name': asdasdf}
+	get source of information for county voting/population
+
+display json saved wtih d3.js
+
+
+find smallest x table size
+
+display next to each other
+
+table
+	remove double bar styling
+	hightlight selected petition
+	highlight selected color
+	add mouse over effects (just small drop shadow? for title mouse over and row mosue over)
+		either row or column mouse over can't be done just with css....
+	make wider/auto exapand
+
+graphs 
+	change mouse over effect to appear next to mouse
+	change color
+	add more space to line graph
+
+change titles to be shorter/better
+redownload sigs with missing data	
+
+download sig text 
+display sig title at the top of page
+display sig text
+
+
+add header
+remove backround colors
+
+
+todo:
+	add link to title
+	fix typos
+	redownload fucked up ones
+
+
+	line up |
+	upload to github
+
+	fix highlight selections wtf is with them??!?
+ 	mouse over - subtle drop shadown, not read
+	delete PR
+
+ 	line graph - scale min value is 25000
+
+ 	write faq
+
+ 	spell check everything again
+
+	publish

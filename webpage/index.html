@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head>
+    <meta charset = "UTF-8">
+    <title>White House Petition Choropleth</title>
+    <link rel = "stylesheet" href = "mapColors.css">
+    <link rel = "stylesheet" href = "style.css">
+</head>
+
+<body>
+	<h6>
+		<span id = "title">White House Petitions
+			<span id = "headerLinks">
+				<a class= "blacklink" href="http://www.roadtolarissa.com/tag/redditgraphs/">blog</a>
+		 		<code>|</code> 
+		 		<a class = "blacklink" href="javascript:showfaq();">faq</a> 
+		 		<code>|</code> 
+		 		<a class= "blacklink" href="https://github.com/1wheel/reddit-comment-visualizer/">github</a>
+		</span>
+	</h6>
+	<div id = "container">
+    	<div id = "left">
+   			<div id = "chartContainer">
+   				<div id = "chartCol">
+   					<a id = "total" class = 'columnTitle' title = "Total Signatures"> &#8721</a>
+   					<a id = "delta" class = 'columnTitle' title = "Signatures Per Day"> &#916</a>
+   					<a id = "gender" class = 'columnTitle' title = "Pecentage Female Signers"> &#9792</a>
+
+   					<span id  = 'name'></span>
+   					<span id = 'party'></span>
+   					<span id = 'age'></span>
+
+				</div>
+				<div id = "chart"></div>
+			</div>
+		</div>
+
+        <div id = "right">
+        	<h2 id = "graphName">
+        		<a id = 'petitionTitle' href = "" class = "blacklink">GraphName</a>
+        	</h2>
+        	<div id = "graphs">
+	 			<div id = "graphContainer">
+	 				<span id = "choroplethTitle" class = "graphTitle">Choropleth of Petition Signers</span>
+					<div id = "choropleth">	
+						<div id = "choroplethGraph"></div>	
+					</div>	 				
+					<div class = "graphInfo">Darker counties indicate more signers per capita</div>
+					<br />
+				</div>
+
+				<div id = "lineContainer">
+					<span id = "choroplethTitle" class = "graphTitle">Total Signatures</span>
+					<div id = "lineGraph"></div>	 				
+					<div class = "graphInfo">Petitions with more than 25,000 signatures receive a response from the White House</div>
+					<br />
+				</div>
+			</div>
+
+			<div id =  "PetitionText">
+				<span id = "choroplethTitle" class = "graphTitle">Petition Text</span>
+				<br />
+				<div id = "importedHTML">
+				</div>
+			</div>
+
+			<a id = "petitionLink" href="http://www.roadtolarissa.com/tag/redditgraphs/">View Petition</a>
+
+		</div>
+	</div>  
+
+	<div id="faq">
+		<span class='q'>What am I looking at?</span><br />
+		The White House website allows citizens to create and sign petitions; I've downloaded the signer's first name and location to map where they are from and chart the rate of signing.
+		<br /><br />
+
+		<span class='q'>Where is the petition I'm looking for?</span><br />
+		Currently the site only examines unanswered petitions with a large number of signatures - this may change in the future, but until then you're out of luck. I add petitions manually and it is possible I've missed one. If that is the case, feel free to send me an email: adam.r.pearce at gmail.com 		
+		<br /><br />
+
+		<span class='q'>Why don't these numbers match the one of the White House page?</span><br />
+		Signitures are only counted if they have a recognizable name and location. It is also possible that the daily update script has run into a problem.  
+		<br /><br />
+
+		<span class='q'>Are there any more statistics about the petitions?</span><br />
+		Based on name and location, I've derived estimations about party affiliation and age for each petition. They aren't nearly as accurate as gender so they aren't currently included; I'm planning on adding an 'advanced view' to the table including them.
+		<br /><br />
+	</div>
+
+
+</body>
+
+	<script src = "jquery.min.js"></script>
+
+    <script type = "text/javascript" src = "d3.v2.js"></script>
+    <link type = "text/css" rel = "stylesheet" href = "choropleth.css"/>
+    <script src = "choropleth.js"></script>
+	<script src = "wrapper.js"></script>
+	<script src = "linegraph.js"></script>
+	<script src = "table.js"></script>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/jquery-ui.min.js"></script>
+
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
+
+</html>

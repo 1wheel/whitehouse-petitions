@@ -1,0 +1,30 @@
+f = open('dist.male.first.txt')
+lines = f.readlines()
+male = {}
+for l in lines:
+	name = l.split(' ')[0]
+	male[name] = float(l[15:20])
+
+f = open('dist.female.first.txt')
+lines = f.readlines()
+female = {}
+for l in lines:
+	name = l.split(' ')[0]
+	female[name] = float(l[15:20])
+
+def chanceMale(name):
+	name = name.upper()
+	if name in male:
+		m = male[name]
+	else:
+		m = 0
+
+	if name in female:
+		f = female[name]
+	else:
+		f = 0
+
+	if m == 0 and f == 0:
+		return .5
+	else:
+		return m/(f+m)

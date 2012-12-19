@@ -1,0 +1,16 @@
+import whitehouse
+import sys
+
+#iterates over all petition urls in petitions.cvs
+petitionSummeries = {}
+
+f = open('petitions.tsv')
+lines = f.readlines()
+for l in lines:
+	l = l.split('\t')
+	try:
+		petitionSummeries = whitehouse.proccessPetition(l[0], l[1], petitionSummeries, False, False)
+	except Exception:
+		print l[0]
+		
+json.dump(petitionSummeries, open('webpage\\data\\petitionSummeries.json', 'wb'))

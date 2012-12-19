@@ -1,0 +1,257 @@
+h4{
+	display:inline;
+}
+
+h1{
+	margin-top: 5px;
+	display:inline;
+	margin-bottom: 0px;
+	margin-top: 5px;
+	font-size: 1.4em;
+}
+
+h2{
+	margin-bottom: 3px;
+}
+
+h3{
+	margin-bottom: 3px;	
+	margin-top: 5px;
+}
+
+body{
+	font-family: Helvetica;
+	min-width:900px;
+}
+
+a{
+}
+
+#headerText{
+	display:inline !important;
+}
+
+#title{
+	font-size: 1.4em;
+}
+
+#header {
+	display: table;
+	background: #CEE3F8;
+	height: 50px;
+	border: 1px solid #5F99CF;
+	left: 0;
+	width: 100%;
+	position: relative;	
+}
+
+.blacklink{
+	color:black;
+	text-decoration:none;
+}
+
+#headerText{
+	position: absolute;
+	bottom: 0; 
+	left: 10px; 
+	font-size: 1em;
+}
+#headLinks{
+	left: 10px; 
+}
+
+#commentDL{
+	padding-top:100px;
+	text-align: center;
+}
+
+#title{
+	text-align: center;
+}
+
+#firstTextBox{
+	width: 14em;
+}
+
+#chartContainer {
+	position:absolute;
+	left:5px;
+    width: 400px;
+    overflow:hidden;
+}
+
+#graphContainer {
+	position:absolute;
+    left: 405px;
+    width: 600px;
+    height:100000px;
+    text-align: center;
+    background-color: red;
+}
+
+#settingsContainer {
+	position:relative;
+    float: left;
+    width: 215px;
+    overflow:hidden;
+    position:relative;
+}
+
+#graphTypeImages {
+  border: 0px solid #000000;
+  column-count:2;
+}
+
+.imgBox{
+	height:55px;
+	width:55px;
+	display:inline;
+	position:relative;
+}
+
+.logBox{
+	width:50px;
+	display:inline;
+}
+
+.logButton{
+	top:-8px;
+	left:10px;
+	z-index: 1;
+	font-size: 110;
+	position: absolute !important;
+
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+.ui-button .ui-button-text
+{
+ 	padding: 0px 11px 0px 13px !important;
+  	font-size: .72em !important;
+  	opacity: .7;
+}
+
+.ui-state-active { 
+	background: #CEE3F8 !important; 
+}
+
+#commentsRadio{
+	font-size:1.06em;
+	margin-left: 5px
+}
+
+.graphimg{
+	padding:5px;
+	border: solid 1px #EFEFEF;
+	opacity:.6;
+}
+
+.graphimg:hover {
+	border: solid 1px #CCC;
+	-moz-box-shadow: 1px 1px 5px #999;
+	-webkit-box-shadow: 1px 1px 5px #999;
+    box-shadow: 1px 1px 5px #999;
+    opacity:1;
+}
+
+.hiddenButton{
+	visibility: hidden;
+}
+
+.disabledgraphimg{
+	padding:5px;
+	border: solid 1px #EFEFEF;
+	opacity:.05;
+	visibility: hidden;
+}
+
+.selected {
+	border: solid 1px Black !important;
+    opacity:1 !important;
+}
+
+#Filters{
+}
+
+#sliders{
+	position:relative;
+	left: 12px;
+	width:170px;
+}
+
+.slider{
+}
+
+.ui-slider .ui-slider-handle {
+	position: absolute;
+	z-index: 2;
+	width: .7em !important;
+	height: 1.2em !important;
+	cursor: default;
+}
+
+#subrestrictions{
+	visibility: hidden;
+	height: 0px;
+}
+
+
+#graph{
+
+}
+
+#legend{
+    margin-left: 30px;
+
+}
+
+#commentTextContainer {
+	z-index: 999;
+	border-left: 4px;
+	position:relative;
+    float: left;
+    width: 300px;
+    background-color: #FFFFFF;
+}
+
+#footer {
+    clear: both;
+}
+
+.numInput{
+	width: 70px;
+}
+
+.dateInput{
+	width: 113px;
+}
+
+.hidden{
+	visibility:hidden;
+}
+
+.md{
+	display:inline;	
+}
+
+.filter{
+	white-space:nowrap;
+}
+
+#diolog{
+	visibility:hidden;
+}
+
+#faq{
+	display:none;
+	font-family: Helvetica;
+	font-size: .8em;
+}
+
+.q{
+	font-size: 1em !important;
+	font-weight: bold;
+}

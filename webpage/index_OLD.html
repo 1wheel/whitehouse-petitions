@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Whitehouse Petition Choropleth</title>
+    <link rel="stylesheet" href="mapColors.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+		<div id="header">
+			<span id="headerText">
+				<h1>Whitehouse Petition Choropleth</h1>
+				<div id="headerLinks">
+					<a class= "blacklink" href="http://www.roadtolarissa.com/tag/redditgraphs/">about</a>
+			 		<code>|</code> 
+			 		<a class = "blacklink" href="javascript:showfaq();">faq</a> 
+			 		<code>|</code> 
+			 		<a class= "blacklink" href="https://github.com/1wheel/reddit-comment-visualizer/">github</a>
+			 		<code>|</code> 
+			 		<a class= "blacklink" href="http://www.reddit.com/r/Enhancement/comments/12hkuu/would_anyone_be_interested_in_integrating/">discuss</a>
+			 	</div>
+			</span>
+		</div>
+
+	<div id="container">		
+		<div id="chartContainer">
+			<div id="chart"></div>
+		</div>
+
+		<div id="graphContainer">
+			<div id="choropleth">		
+				<span id="mouseOver"></span>
+			</div>
+		</div>
+
+	</div>
+
+</body>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="http://d3js.org/d3.v3.min.js"></script>
+	<script src="http://d3js.org/queue.v1.min.js"></script>
+	<script src="drawMap.js"></script>
+	<script src="table.js"></script>
+</html>
